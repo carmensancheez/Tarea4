@@ -182,6 +182,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ConversorController.cs" />
     <Compile Include="Controllers\FiltroController.cs" />
+    <Compile Include="Controllers\FormularioController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -259,18 +260,20 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Conversor\Formulario.cshtml" />
-    <Content Include="Views\Conversor\Datos.cshtml" />
     <Content Include="Views\Home\Upload.cshtml" />
     <Content Include="Views\Filtro\Index.cshtml" />
     <Content Include="Views\Filtro\Noticias.cshtml" />
     <Content Include="Views\Filtro\Musica.cshtml" />
     <Content Include="Views\Filtro\Peliculas.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Formulario\Formulario.cshtml" />
+    <Content Include="Views\Conversor\Index.cshtml" />
+    <Content Include="Views\Formulario\Resultados.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Data\" />
+    <Folder Include="img\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

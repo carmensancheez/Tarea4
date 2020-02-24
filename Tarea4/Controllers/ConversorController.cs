@@ -14,14 +14,6 @@ namespace Tarea4.Controllers
         {
             return View();
         }
-
-        public ActionResult Formulario()
-        {
-            return View();
-        }
-        public ActionResult Datos()
-        {
-            return View();
-        }
+        
     }
 }
