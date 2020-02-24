@@ -3,23 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Tarea4.Models;
 
 namespace Tarea4.Controllers
 {
-    public class ConversorController : Controller
+    public class FiltroController : Controller
     {
-        // GET: Conversor
+        // GET: Filtro
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Formulario()
+        public ActionResult Noticias()
         {
             return View();
         }
-        public ActionResult Datos()
+        public ActionResult Musica()
+        {
+            return View();
+        }
+        public ActionResult Peliculas()
         {
             return View();
         }

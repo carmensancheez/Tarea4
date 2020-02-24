@@ -28,12 +28,17 @@ namespace Tarea4.Models
         [RegularExpression(@"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}", ErrorMessage = "Porfavor introduzca un Email con el formato correcto")]
         public string Correo { get; set; }
         public Gender Genero { get; set; }
-        public string Puesto { get; set; }
+        public Job Puesto { get; set; }
         public string Curriculum { get; set; }
 
         public enum Gender
         {
             Masculino, Femenino
+        }
+
+        public enum Job
+        {
+            Programador, Diseñador, DBA, Analista
         }
     }
 }

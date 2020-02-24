@@ -6,7 +6,7 @@
 
 <h2>Formulario</h2>
 
-@using (Html.BeginForm("Datos", "Conversor", FormMethod.Post, new { enctype = "multipart/form-data" }))
+@using (Html.BeginForm("Resultados", "Formulario", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.LabelFor(a => a.Cedula)
     @Html.TextBoxFor(b => b.Cedula, new { @class = "form-control", placeholder = "Escriba su Cedula" })
@@ -35,7 +35,7 @@
     @Html.EnumDropDownListFor(a => a.Genero, htmlAttributes: new { @class = "form-control" })
     <br />
     @Html.LabelFor(a => a.Puesto)
-    @Html.TextBoxFor(b => b.Puesto, new { @class = "form-control", placeholder = "Escriba el Puesto al que aspira" })
+    @Html.EnumDropDownListFor(a => a.Puesto, htmlAttributes: new { @class = "form-control" })
     <br />
     @Html.Label("Foto")
     <input type="file" name="foto" />
