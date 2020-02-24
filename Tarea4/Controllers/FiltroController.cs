@@ -6,24 +6,24 @@ using System.Web.Mvc;
 
 namespace Tarea4.Controllers
 {
-    public class HomeController : Controller
+    public class FiltroController : Controller
     {
+        // GET: Filtro
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Noticias()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
-
-        public ActionResult Contact()
+        public ActionResult Musica()
         {
-            ViewBag.Message = "Your contact page.";
-
+            return View();
+        }
+        public ActionResult Peliculas()
+        {
             return View();
         }
     }

@@ -1,0 +1,46 @@
+﻿@model Tarea4.Models.Estudiante
+@using Tarea4.Models
+@{
+    ViewBag.Title = "Formulario";
+}
+
+<h2>Formulario</h2>
+
+@using (Html.BeginForm("Resultados", "Formulario", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.LabelFor(a => a.Cedula)
+    @Html.TextBoxFor(b => b.Cedula, new { @class = "form-control", placeholder = "Escriba su Cedula" })
+    @Html.ValidationMessageFor(a => a.Cedula, "", new { @class = "text-danger" })
+    <br />
+    @Html.LabelFor(a => a.Nombre)
+    @Html.TextBoxFor(b => b.Nombre, new { @class = "form-control", placeholder = "Escriba su Nombre" })
+    @Html.ValidationMessageFor(a => a.Nombre, "", new { @class = "text-danger" })
+    <br />
+    @Html.LabelFor(a => a.Apellido)
+    @Html.TextBoxFor(b => b.Apellido, new { @class = "form-control", placeholder = "Escriba su Apellido" })
+    @Html.ValidationMessageFor(a => a.Apellido, "", new { @class = "text-danger" })
+    <br />
+    @Html.LabelFor(a => a.Edad)
+    @Html.TextBoxFor(b => b.Edad, new { @class = "form-control", placeholder = "Escriba su Edad" })
+    @Html.ValidationMessageFor(a => a.Edad, "", new { @class = "text-danger" })
+    <br />
+    @Html.LabelFor(a => a.Telefono)
+    @Html.TextBoxFor(b => b.Telefono, new { @class = "form-control", placeholder = "Escriba su Telefono" })
+    <br />
+    @Html.LabelFor(a => a.Correo)
+    @Html.TextBoxFor(b => b.Correo, new { @class = "form-control", placeholder = "Escriba su Correo Electrónico" })
+    @Html.ValidationMessageFor(a => a.Correo, "", new { @class = "text-danger" })
+    <br />
+    @Html.LabelFor(a => a.Genero)
+    @Html.EnumDropDownListFor(a => a.Genero, htmlAttributes: new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(a => a.Puesto)
+    @Html.EnumDropDownListFor(a => a.Puesto, htmlAttributes: new { @class = "form-control" })
+    <br />
+    @Html.Label("Foto")
+    <input type="file" name="foto" />
+
+    <br />
+    <input type="submit" value="ACEPTAR" />
+
+}
