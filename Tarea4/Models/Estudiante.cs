@@ -29,7 +29,6 @@ namespace Tarea4.Models
         public string Correo { get; set; }
         public Gender Genero { get; set; }
         public Job Puesto { get; set; }
-        public string Curriculum { get; set; }
 
         public enum Gender
         {

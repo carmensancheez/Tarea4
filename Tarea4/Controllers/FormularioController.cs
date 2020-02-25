@@ -16,14 +16,22 @@ namespace Tarea4.Controllers
         }
 
         [HttpPost]
-        public ActionResult Resultados(Estudiante dat, HttpPostedFileBase foto)
+       public ActionResult Resultados(Estudiante dat, HttpPostedFileBase foto, HttpPostedFileBase curriculum)
         {
             if (ModelState.IsValid)
             {
                 string nombre = foto.FileName;
                 foto.SaveAs(Server.MapPath("/img/" + nombre));
                 ViewBag.pic = nombre;
+
+                string nombre2 = curriculum.FileName;
+                curriculum.SaveAs(Server.MapPath("/pdf/" + nombre2));
+                ViewBag.cv = nombre2;
+
+
                 return View(dat);
+
+
             }
             else
             {
